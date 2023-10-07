@@ -100,6 +100,7 @@ async function quotes() {
     quote.innerHTML = "Select category first";
   } else {
     while (qt === "") {
+      quote.style.fontFamily = "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif";
       quote.innerHTML = "Loading...";
       author.innerHTML = "";
       qt = await fetch(qturl, { headers: headers }).then((response) =>
